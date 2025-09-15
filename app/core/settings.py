@@ -1,7 +1,8 @@
 from pathlib import Path
+
+from pydantic import ConfigDict
 from pydantic import Field
 from pydantic_settings import BaseSettings
-from pydantic import ConfigDict
 
 # определяем базовую директорию проекта
 BASE_DIR = Path(__file__).resolve().parent.parent.parent  # поднимаемся до корня migration_project
@@ -35,4 +36,3 @@ class Settings(BaseSettings):
 
 
 settings = Settings()
-print(settings.data_dir, settings.default_migration_sleep_minutes, sep='\n')
