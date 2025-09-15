@@ -1,10 +1,9 @@
-import threading
-import time
+from uuid import uuid4
 
 import pytest
-from uuid import uuid4
-from app.models.models import Migration, Workload, MigrationTarget, Credentials, CloudTypes, MountPoint
+
 from app.managers import MigrationManager
+from app.models.models import Migration, Workload, MigrationTarget, Credentials, CloudTypes, MountPoint
 
 
 @pytest.fixture

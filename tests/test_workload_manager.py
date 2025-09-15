@@ -1,7 +1,9 @@
-import pytest
 from uuid import uuid4
-from app.models.models import Workload, MountPoint, Credentials
+
+import pytest
+
 from app.managers import WorkloadManager
+from app.models.models import Workload, MountPoint, Credentials
 
 
 @pytest.fixture

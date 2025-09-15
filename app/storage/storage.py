@@ -1,6 +1,6 @@
 import json
-from pathlib import Path
 from typing import Any, Optional, Type, TypeVar
+
 from pydantic import BaseModel
 
 from app.core.settings import settings

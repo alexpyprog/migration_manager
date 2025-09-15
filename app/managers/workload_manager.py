@@ -1,5 +1,5 @@
 from typing import List, Optional
-from uuid import UUID
+
 from app.models import Workload
 from app.storage.storage import Repository
 

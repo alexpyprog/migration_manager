@@ -19,6 +19,5 @@ app.add_middleware(
 app.include_router(migration_router)
 app.include_router(workload_router)
 
-
 if __name__ == '__main__':
     uvicorn.run(app=app)

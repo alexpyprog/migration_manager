@@ -1,10 +1,11 @@
-import pytest
 from uuid import uuid4
-from app.models.models import Workload, MountPoint, Migration, MigrationTarget, Credentials, CloudTypes, MigrationState
-from app.entities.migration_entity import MigrationEntity
 
+import pytest
+
+from app.entities.migration_entity import MigrationEntity
 from app.managers.migration_manager import MigrationManager
 from app.managers.workload_manager import WorkloadManager
+from app.models.models import Workload, MountPoint, Migration, MigrationTarget, Credentials, CloudTypes, MigrationState
 
 
 @pytest.fixture
